@@ -10,6 +10,6 @@
     - name: populate motd
       template:
         dest: /etc/profile.d/motd.sh
-        owner: ansible
+        owner: dave
         group: ansible
         mode: '774'
