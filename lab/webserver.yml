@@ -1,2 +1,14 @@
 ---
 # Please use the template.j2 provided as the index.html
+- name: This sets up an httpd webserver
+  hosts: app
+  become: true
+  tasks:
+  - name: Install apache packages 
+
+  - name: ensure httpd is running
+
+  #  Use the Template module and the'Dest' parameter should be set to /var/www/html/index.html
+  - name: populate html webserver
+
+  - name: Restart httpd
