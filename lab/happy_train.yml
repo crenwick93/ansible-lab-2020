@@ -4,6 +4,10 @@
   hosts: apps
   become: true
   tasks:
+  - name: Install epel-release 
+    yum:
+      name: https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+      state: latest
   - name: Install happy train 
     yum:
       name: sl
@@ -12,5 +16,5 @@
     template:
       dest: /etc/profile.d/motd.sh
       owner: dave
-      group: ansible
+      group: root
       mode: '774'
