@@ -9,6 +9,7 @@
 
   - name: start mariadb
     service:
+    
 
 
   - name: mysql_root_password
@@ -18,5 +19,5 @@
       user: root
       check_implicit_admin: true
       password: password
-      host: localhost
+      host: 
     
